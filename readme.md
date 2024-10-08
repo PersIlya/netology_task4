@@ -24,7 +24,7 @@ Hey, Netology
 - Собрать и отправить созданный образ в свой dockerhub-репозитории c tag 1.0.0 (ТОЛЬКО ЕСЛИ ЕСТЬ ДОСТУП).
 - Предоставить ответ в виде ссылки на https://hub.docker.com/<username_repo>/custom-nginx/general .
 
-### <p style="text-align: center;">Решение</p>
+### <div style="text-align: center;">Решение</div>
 ```html
 https://hub.docker.com/repository/docker/personil/my_build_nginx/general
 ```
@@ -41,7 +41,7 @@ https://hub.docker.com/repository/docker/personil/my_build_nginx/general
 4. Не удаляя, переименовать контейнер в "custom-nginx-t2"
 Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
-### <p style="text-align: center;">Решение</p>
+### <div style="text-align: center;">Решение</div>
 ![localImage](./screen_4.2.1-4.png)
 
 
@@ -61,7 +61,7 @@ https://hub.docker.com/repository/docker/personil/my_build_nginx/general
 11. - Это дополнительное, необязательное задание. Попробуйте самостоятельно исправить конфигурацию контейнера, используя доступные источники в интернете. Не изменяйте конфигурацию nginx и не удаляйте контейнер. Останавливать контейнер можно. пример источника
 12. Удалите запущенный контейнер "custom-nginx-t2", не останавливая его.(воспользуйтесь --help или google)
 
-### <p style="text-align: center;">Решение</p>
+### <div style="text-align: center;">Решение</div>
 >по пунктам 1-10
 ![localImage](./screen_4.3.1-10.png)
 >по пунктам 11-12
@@ -77,7 +77,7 @@ https://hub.docker.com/repository/docker/personil/my_build_nginx/general
 5. Подключитесь во второй контейнер и отобразите листинг и содержание файлов в `/data` контейнера.
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
-### <p style="text-align: center;">Решение</p>
+### <div style="text-align: center;">Решение</div>
 ![localImage](./screen_4.4.png)
 
 
@@ -126,6 +126,6 @@ services:
 7. Удалите любой из манифестов компоуза(например compose.yaml). Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ(обязательно!!) командой.
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод, файл compose.yaml , скриншот portainer c задеплоенным компоузом.
 
-### <p style="text-align: center;">Решение</p>
+### <div style="text-align: center;">Решение</div>
 >по пунктам 1-10
 ![localImage](./)
