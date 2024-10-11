@@ -33,7 +33,7 @@ https://hub.docker.com/repository/docker/personil/my_build_nginx/general
 ## Задача 2
 
 1. Запустить образ custom-nginx:1.0.0 командой docker run в соответвии с требованиями:
-`имя контейнера ФИО-custom-nginx-t2`\
+\`имя контейнера ФИО-custom-nginx-t2`\
 `контейнер работает в фоне`\
 `контейнер опубликован на порту хост системы 127.0.0.1:8080`
 2. Не удаляя, переименовать контейнер в "custom-nginx-t2"
