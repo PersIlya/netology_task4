@@ -1,5 +1,5 @@
 ## <p style="text-align: center;">ОТЧЕТ</p> <p style="text-align: center;">по домашнему заданию к занятию 4 «Оркестрация группой Docker контейнеров на примере Docker Compose»</p>
-## <p style="text-align: right;">Выполнил: _____</p>
+## <p style="text-align: right;">Выполнил: студент Порсев И.С.</p>
 
 
 
@@ -82,7 +82,7 @@ https://hub.docker.com/repository/docker/personil/my_build_nginx/general
 ![localImage](./Yes.png)
 
 ## Задача 5
-1. Создать отдельную директорию(например /tmp/netology/docker/task5) и 2 файла внутри него. "compose.yaml" с содержимым:
+1. Создать отдельную директорию и 2 файла внутри него. "compose.yaml" с содержимым:
 ```docker 
 version: "3"
 services:
@@ -106,6 +106,9 @@ services:
 ```
 И выполните команду "docker compose up -d". Какой из файлов был запущен и почему? (подсказка: https://docs.docker.com/compose/compose-application-model/#the-compose-file )
 
+### ___Ответ:___
+___Первым запускается файл `compose.yaml`, который является приоритетным файлом по сравнения с `docker-compose.yaml`. В новых версиях перешли на использование `docker-compose.yaml`, однако для поддержки предыдущих версий данный файл оставили без изменений.___
+
 2. Отредактируйте файл compose.yaml так, чтобы были запущенны оба файла. (подсказка: https://docs.docker.com/compose/compose-file/14-include/)
 
 3. Выполните в консоли вашей хостовой ОС необходимые команды чтобы залить образ custom-nginx как custom-nginx:latest в запущенное вами, локальное registry. Дополнительная документация: https://distribution.github.io/distribution/about/deploying/
@@ -123,9 +126,25 @@ services:
 ```
 6. Перейдите на страницу "http://127.0.0.1:9000/#!/2/docker/containers", выберите контейнер с nginx и нажмите на кнопку "inspect". В представлении <> Tree разверните поле "Config" и сделайте скриншот от поля "AppArmorProfile" до "Driver".
 
-7. Удалите любой из манифестов компоуза(например compose.yaml). Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ(обязательно!!) командой.
+7. Удалите любой из манифестов компоуза (например compose.yaml). Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ (обязательно!!) командой.
+
+### ___Ответ:___
+___Суть предупреждения "Docker compose" заключается в том что изменения по удалению файла в стэке не произошли и поэтому для подтверждения данных действий (в моем случае - удаление) необходимо использовать флаг `--remove-orphans`.___
+
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод, файл compose.yaml , скриншот portainer c задеплоенным компоузом.
 
+
 ### <div style="text-align: center;">Решение</div>
->по пунктам 1-10
-![localImage](./)
+>по пунктам 1-2
+![localImage](./screen_4.5.1-2.png)
+![localImage](./Yes.png)
+>по пункту 5
+![localImage](./screen_4.5.5.png)
+![localImage](./Yes.png)
+>по пункту 6
+![localImage](./screen_4.5.6_0.png)
+![localImage](./screen_4.5.6_1.png)
+![localImage](./Yes.png)
+>по пункту 7
+![localImage](./screen_4.5.7.png)
+![localImage](./Yes.png)
